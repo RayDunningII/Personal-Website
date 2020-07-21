@@ -1,8 +1,11 @@
 import React from 'react';
 
+import Card from '../components/Card';
 import linkedin from '../images/linkedin.jpg';
 import github from '../images/github.png';
 import lvlup from '../images/lvlup.png';
+import { Container, Row} from 'react-bootstrap';
+
 
 class Carousel extends React.Component {
 
@@ -14,6 +17,7 @@ class Carousel extends React.Component {
                     id: 0,
                     title: 'LvlUp Fitness',
                     subTitle: 'track, add and manage a workout routine',
+                    imgSrc: lvlup,
                     link: 'https://levelupfitness.herokuapp.com/Profile',
                     selected: false
 
@@ -21,14 +25,16 @@ class Carousel extends React.Component {
                 {
                     id: 1,
                     title: 'GitHub',
-                    subTitle: 'Ray/s Github account',
+                    subTitle: 'My Github account',
+                    imgSrc: github,
                     link: 'https://github.com/RayDunningII',
                     selected: false
                 },
                 {
                     id: 2,
                     title: 'LinkedIn',
-                    subTitle: 'Ray/s LinkedIn',
+                    subTitle: 'My LinkedIn',
+                    imgSrc: linkedin,
                     link: 'https://www.linkedin.com/in/ray-dunning-ii/',
                     selected: false
                 }
@@ -53,11 +59,22 @@ class Carousel extends React.Component {
             })
     };
 
+    makeItems = (items) => {
+        return items.map(item => {
+            return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id}  /> 
+        })
+
+    }
+
     
 
     render() {
       return(
-          <p>Hai</p >
+          <Container fluid={true}>
+              <Row className='justify-content-around'>
+                  {this.makeItems(this.state.items)}
+              </Row>
+          </Container>
       )
     }
 

@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.r-card{
+margin: 20px,
+
+}
+
+.r-card-image{
+border-radius: 10px;
+width: 300px;
+height: 480px;
+box-shadow: 0px 0px 3px 1px #333;
+}
+
+.r-card-info{
+  margin-top: 10px;
+  min-height: 100px;
+
+}
+
+.r-card-title{
+  font-size: 24px;
+  margin: 0px;
+
+}
+
+.r-card-sub-title{
+  font-size: 16px;
+  margin: 0px
+
+}

@@ -41,3 +41,14 @@ box-shadow: 0px 0px 3px 1px #333;
   margin: 0px
 
 }
+
+
+.success-msg {
+  color: rgb(146, 240, 196);
+  padding: 10px 15px;
+}
+
+.err-msg {
+  color: rgb(189, 15, 15);
+  padding: 10px 15px;
+}

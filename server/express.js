@@ -11,7 +11,7 @@ const SENDGRID_API_KEY = (process.env.SENDGRID_API_KEY)
 const app = express();
 
 app.use(bodyParser.json());
-app.use(express.static(path.resolve(__dirname,'./public')))
+app.use(express.static(path.resolve(__dirname,'public')))
 app.use(cors());
 
 app.use((req, res, next) => {

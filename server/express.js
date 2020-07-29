@@ -38,7 +38,7 @@ app.get('/api', (req, res, next) => {
 });
 
 
-app.post('/api/email', (req, res, next ) => {
+app.post('https://raydunning.herokuapp.com/api/email', (req, res, next ) => {
 
     console.log(req.body)
 

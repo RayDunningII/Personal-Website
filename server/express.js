@@ -13,7 +13,7 @@ const path = require ('path');
 const app = express();
 
 app.use(bodyParser.json());
-app.use(express.static(path.resolve(__dirname,'public')))
+// app.use(express.static(path.resolve(__dirname,'public')))
 app.use(cors());
 
 app.use((req, res, next) => {
@@ -22,6 +22,7 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     next();
 });
+
    if (process.env.NODE_ENV === 'production') {
   // Exprees will serve up production assets
   app.use(express.static('server/build'));

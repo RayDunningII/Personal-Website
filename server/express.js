@@ -23,6 +23,13 @@ app.use((req, res, next) => {
     next();
 });
 
+const proxy = require('http-proxy-middleware')
+
+module.exports = function(app) {
+    // add other server routes to path array
+    app.use(proxy(['/api' ], { target: 'http://localhost:5000' }));
+} 
+
 if(process.env.NODE_ENV === 'production'){
     //set static folder
     app.use(express.static('build'));

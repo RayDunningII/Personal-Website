@@ -27,7 +27,7 @@ const proxy = require('http-proxy-middleware')
 
 module.exports = function(app) {
     // add other server routes to path array
-    app.use(proxy(['/api' ], { target: 'http://localhost:5000' }));
+    app.use(proxy(['/api' ], { target: 'http://localhost:4000' }));
 } 
 
 if(process.env.NODE_ENV === 'production'){
@@ -45,7 +45,7 @@ app.get('/api', (req, res, next) => {
 });
 
 
-app.post('https://raydunning.herokuapp.com/api/email', (req, res, next ) => {
+app.post('/api/email', (req, res, next ) => {
 
     console.log(req.body)
 

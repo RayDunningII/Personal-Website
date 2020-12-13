@@ -10,10 +10,7 @@ function Footer () {
          <Container fluid={true}>
              <Row className='border-top justify-content-between p-3'>
                  <Col className='p-0' md={3}>
-                Ray Dunning II
-                 </Col>
-                 <Col className='p-0 d-flex justify-content-end' md={3}>
-                    Created by Ray Dunning II 
+                 Created by Ray Dunning II
                  </Col>
              </Row>
          </Container>

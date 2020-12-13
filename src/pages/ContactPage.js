@@ -33,8 +33,8 @@ class ContactPage extends React.Component {
     this.setState({
       disabled: true,
     });
-  let URL = `https://raydunning.herokuapp.com/api/email`
-    Axios.post(URL, this.state)
+  
+    Axios.post('http://localhost:3000/api/email', this.state)
     .then(res => {
         if(res.data.success) {
             this.setState({

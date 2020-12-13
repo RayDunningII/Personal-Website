@@ -15,14 +15,13 @@ function AboutPage(props) {
         <p> I enjoy challenging myself and tackling tough problems.</p> 
         <p>I believe my time in the military meeting and collaborating with so many people gives me a unique perspective.</p>
 
-        <p>Technical Skills:</p>
-        <p>Front-end: JavaScript, React.js, JQuery, HTML, CSS, React-Hooks, Bootstrap.js</p>
-        <p>Back-end: Node.js, Express</p>
-        <p>Databases: MySql, MongoDB</p>
-        <p>Libraries: React-Router, Axios, React-Slick, Babel, Webpack, MaterialUI</p>
-        <p>Other: Agile WorkFlow, Git WorkFlow</p>
+        <p><b>Front-end: JavaScript, React.js, JQuery, HTML, CSS, React-Hooks, Bootstrap.js</b></p>
+        <p><b>Back-end: Node.js, Express</b></p>
+        <p><b>Databases: MySql, MongoDB</b></p>
+        <p><b>Libraries: React-Router, Axios, React-Slick, Babel, Webpack, MaterialUI</b></p>
+        <p><b>Other: Agile WorkFlow, Git WorkFlow</b></p>
 
-         Email: dunningray@gmail.com || Phone: (209) 352-2682 || GitHub: https://github.com/RayDunningII || Personal Site: https://raydunning.herokuapp.com/ 
+         <p><b>Email: dunningray@gmail.com || Phone: (209) 352-2682</b></p> 
          </Content>
 
      </div>

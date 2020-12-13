@@ -18,7 +18,7 @@ function AboutPage(props) {
         <p>Technical Skills:</p>
         <p>Front-end: JavaScript, React.js, JQuery, HTML, CSS, React-Hooks, Bootstrap.js</p>
         <p>Back-end: Node.js, Express</p>
-        <p><Databases: MySql, MongoDB</p>
+        <p>Databases: MySql, MongoDB</p>
         <p>Libraries: React-Router, Axios, React-Slick, Babel, Webpack, MaterialUI</p>
         <p>Other: Agile WorkFlow, Git WorkFlow</p>
 

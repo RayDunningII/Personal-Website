@@ -45,7 +45,7 @@ app.get('/api', (req, res, next) => {
 });
 
 
-app.post('/api/email', (req, res, next ) => {
+app.post('/api', (req, res, next ) => {
 
     console.log(req.body)
 

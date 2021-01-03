@@ -1,5 +1,5 @@
 const express = require('express');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const sgMail = require('@sendgrid/mail');
@@ -15,6 +15,7 @@ const app = express();
 app.use(bodyParser.json());
 // app.use(express.static(path.resolve(__dirname,'public')))
 app.use(cors());
+app.listen(port);
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');

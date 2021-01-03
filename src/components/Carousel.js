@@ -18,7 +18,7 @@ class Carousel extends React.Component {
                     title: 'LvlUp Fitness',
                     subTitle: 'track, add and manage a workout routine',
                     imgSrc: lvlup,
-                    link: 'https://github.com/hratx-blue-ocean/lvlUpFitness',
+                    link: 'https://levelupfitness.herokuapp.com/',
                     selected: false
 
                 },

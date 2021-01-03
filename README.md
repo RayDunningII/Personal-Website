@@ -1,5 +1,5 @@
 # Personal-Website
-![](UI%20Pictures/lvlupfitness.gif)
+![](src/images/Screen%20Shot%202021-01-03%20at%202.11.46%20PM.png)
 
 # About 
 My personal site built with ReactJS to showcase some projects I worked on recently with a clean minimalist style.  

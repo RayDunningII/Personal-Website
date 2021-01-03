@@ -14,6 +14,7 @@ const app = express();
 
 app.use(bodyParser.json());
 // app.use(express.static(path.resolve(__dirname,'public')))
+app.use(express.static(__dirname + '/'));
 app.use(cors());
 app.listen(port);
 

@@ -6,10 +6,10 @@ My personal site built with ReactJS to showcase some projects I worked on recent
 
 
 # Technologies
-|       | Description |
+| ![](src/images/Bootstrap.png)      | ![](src/images/Heroku.png) |
 | ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| ![](src/images/NodeJS.png)     | ![](src/images/ReactJS.png)      |
+| ![](src/images/ReactRouter.png)   |         |
 
 
 ## Deployment

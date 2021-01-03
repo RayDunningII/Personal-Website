@@ -6,6 +6,10 @@ My personal site built with ReactJS to showcase some projects I worked on recent
 
 
 # Technologies
+|       | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
 
 
 ## Deployment

@@ -1,5 +1,5 @@
 const express = require('express');
-// const port = process.env.PORT || 4000;
+const port = process.env.PORT || 4000;
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const sgMail = require('@sendgrid/mail');
@@ -13,13 +13,13 @@ const path = require ('path');
 const app = express();
 
 app.use(bodyParser.json());
-// app.use(express.static(path.resolve(__dirname,'public')))
+app.use(express.static(path.resolve(__dirname,'public')))
 app.use(express.static(__dirname + '/'));
 app.use(cors());
-// app.listen(port);
-app.listen(process.env.PORT || 4000, function(){
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-  });
+app.listen(port);
+// app.listen(process.env.PORT || 4000, function(){
+//     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+//   });
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -30,10 +30,10 @@ app.use((req, res, next) => {
 
 const proxy = require('http-proxy-middleware')
 
-module.exports = function(app) {
-    // add other server routes to path array
-    app.use(proxy(['/api' ], { target: 'http://localhost:4000' }));
-} 
+// module.exports = function(app) {
+//     // add other server routes to path array
+//     app.use(proxy(['/api' ], { target: 'http://localhost:4000' }));
+// } 
 
 if(process.env.NODE_ENV === 'production'){
     //set static folder
